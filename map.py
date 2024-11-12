@@ -26,8 +26,12 @@ print(f"Ends with s, add !: {list(map(lambda fruit: fruit + "!" if fruit.endswit
 # the user will have to go line by line in order to find an error, and he will have to coordinate between the functions
 # in his code to make sure they all work based on the global.
 x: int = 1
+
+
 def foo():
     print(x)
+
+
 x = 4
 foo()
 # the reason we will get an error is that we didn't mention that the x we want to print is global.
